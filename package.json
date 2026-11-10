@@ -1,0 +1,29 @@
+{
+  "name": "navola-intents",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "ai": "6",
+    "typescript": "^5",
+    "zod": "^4.1.11"
+  },
+  "peerDependencies": {
+    "ai": "^6.0.0"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4"
+  },
+  "version": "0.1.0",
+  "description": "NEAR Intents (1Click) cross-chain swaps for Navola's AI trading assistant",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "quote": "bun src/cli.ts"
+  }
+}
