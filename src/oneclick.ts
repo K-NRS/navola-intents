@@ -44,7 +44,21 @@ export type SwapStatus =
   | 'REFUNDED'
   | 'FAILED'
 
-export type StatusResponse = { status: SwapStatus; swapDetails?: unknown }
+type ChainTx = { hash: string; explorerUrl: string }
+
+export type StatusResponse = {
+  status: SwapStatus
+  updatedAt: string
+  swapDetails: {
+    amountOut?: string
+    amountOutFormatted?: string
+    amountOutUsd?: string
+    refundedAmountFormatted?: string
+    refundReason?: string
+    originChainTxHashes: ChainTx[]
+    destinationChainTxHashes: ChainTx[]
+  }
+}
 
 export type OneClickOptions = {
   baseUrl?: string
