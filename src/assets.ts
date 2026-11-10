@@ -89,6 +89,6 @@ export function toBaseUnits(amount: string, decimals: number): string {
     throw new Error(`Amount "${amount}" has more than ${decimals} decimals`)
   }
   const base = BigInt(whole + fraction.padEnd(decimals, '0'))
-  if (base <= 0n) throw new Error(`Amount must be greater than zero, got "${amount}"`)
+  if (base <= BigInt(0)) throw new Error(`Amount must be greater than zero, got "${amount}"`)
   return base.toString()
 }
