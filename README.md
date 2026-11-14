@@ -4,7 +4,7 @@ NEAR Intents (1Click) cross-chain swaps for [Navola](https://app.navola.ai), an 
 
 Built for NEAR HACKATHON (Nov 1–14, 2026). Tracks: **Unstoppable DeFi**, **Agent Economy**.
 
-- **Demo video:** [media/navola-near-demo.mp4](media/navola-near-demo.mp4) (63 s)
+- **Demo video:** [media/navola-near-demo.mp4](media/navola-near-demo.mp4) (63 s, includes a real mainnet swap: 0.1 SOL to 6.938111 USDC on Base via NEAR Intents)
 - **Live:** [app.navola.ai](https://app.navola.ai). Ask the assistant "swap 0.1 SOL to USDC on Base".
 
 ## What it does
